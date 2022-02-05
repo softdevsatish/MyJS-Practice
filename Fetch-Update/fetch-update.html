@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fetch - Update Method</title>
+  </head>
+  <body>
+    <form id="myForm">
+      Title:<input type="text" id="t-text" /><br /><br />
+      Body:<input type="text" id="b-text" /><br /><br />
+      User Id:<input type="text" id="i-text" /><br /><br />
+      <input type="submit" id="save" />
+    </form>
+    <script>
+      document.getElementById("save").addEventListener("click", function (e) {
+        e.preventDefault();
+        let obj = {
+          title: document.getElementById("t-text").value,
+          body: document.getElementById("b-text").value,
+          userId: document.getElementById("i-text").value,
+        };
+        fetch("https://jsonplaceholder.typicode.com/posts", {
+          method: "POST",
+          body: JSON.stringify(obj),
+          headers: {
+            "Content-type": "application/json; charset=UTF-8",
+          },
+        })
+          .then((response) => response.json())
+          .then((json) => console.log(json));
+      });
+    </script>
+  </body>
+</html>

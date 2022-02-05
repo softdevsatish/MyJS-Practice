@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Async and Await in JS</title>
+  </head>
+  <body>
+    <script>
+      /*
+        // Async Method
+        // let test = async function(){
+            async function test(){
+            return "Hello Javascript!";
+        }
+         test().then((result)=>{
+            console.log(result);
+         }) 
+         */
+
+      /* 
+         async function test(){
+            console.log('A');
+            await console.log('B');
+            console.log('C');
+          }
+
+          test();
+          console.log('D');
+          console.log('E');
+          */
+      async function test() {
+        try {
+          const response = await fetch("data.json");
+          const students = await response.json();
+          return students;
+        } catch (error) {
+          document.write("File Not Found");
+        }
+      }
+
+      test().then((result) => {
+        console.log(result);
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,19 @@
+[
+    {
+        "name": "Satish",
+        "age": "35",
+        "education": "MCA"
+    },
+
+    {
+        "name": "Pravesh",
+        "age": "16",
+        "education": "MTech"
+    },
+
+    {
+        "name": "Jai",
+        "age": "25",
+        "education": "BCA"
+    }
+]
