@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iterators</title>
+</head>
+<body>
+    <script>
+        // let arr = ['A', 'B', 'C', 'D'];
+        // for(i=0; i<arr.length; i++){
+        //     console.log(arr[i]);
+        // }
+        
+        // for(let element of arr){
+        //     console.log(element);
+        // }
+
+        // let arr = ['A', 'B', 'C', 'D'];
+        // let arr2 = arr[Symbol.iterator]();
+        // console.log(arr2.next().value);
+        // console.log(arr2.next().value);
+
+
+        //  let num = [10, 20, 30, 40];
+        //  let iter = num[Symbol.iterator]();
+        //  let result  = iter.next();
+        //  while(!result.done){
+        //     console.log(result.value);
+        //     result  = iter.next();  
+        //  }
+
+        let str ="Hellloooo";
+        for (char of str){
+            console.log(char);
+        }
+
+    </script> 
+</body>
+</html>

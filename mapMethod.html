@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //    let arr1 = [10,20,30,40,50];
+    //    let arr2 = arr1.map(num);
+    //    console.log(arr2);
+    //    function num(n){
+    //     return n*10;
+    //    }
+
+
+    // let arr1 = [10,20,30,40,50];
+    //    let arr2 = arr1.map(function multi(a){
+    //     return a*10;
+    //    });
+    //    console.log(arr2);
+
+
+    let arr1 = [
+        {name: "Ram", age: 35, city: "Noida"},
+        {name: "Raman", age: 45, city: "Lucknow"},
+        {name: "Ramesh", age: 55, city: "Delhi"}
+    ];
+
+    let arr2 = arr1.map(test);
+    document.write(arr2);
+    function test(x){
+        return `${x.name} ${x.age} ${x.city}`;
+    }
+    </script>
+</body>
+</html>

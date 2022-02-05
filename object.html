@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Object</title>
+</head>
+<body>
+    <script>
+        let studentDetails = {
+            firstName: 'Preeti',
+            lastName: 'Jaiswal',
+            education: 'Master in Art',
+            city: 'Gorakhpur',
+            hobbies: ['Story Reading', 'Yoga', 'Meditation','Gardening'],
+            age: function(){
+                return 32;
+            },
+            fullName: function(){
+                return this.firstName + ' ' + this.lastName;
+            },
+            fav:{
+                'movieName': 'RHTDM',
+                'songs': 'zara zara behekta hai',
+                'sports': 'Badminton',
+            }
+        }
+        // document.write(studentDetails);
+        console.log(studentDetails);
+        document.write(studentDetails.firstName +'<br>');
+        document.write(studentDetails.hobbies + '<br>');
+        document.write(studentDetails.age() + '<br>');
+        document.write(studentDetails.fullName() + '<br>');
+        // console.log(studentDetails.fav);
+        document.write(studentDetails.fav.movieName + '<br>');
+        document.write(studentDetails.fav.songs + '<br>');
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Emp{
+            constructor(_name, _id, _salary){
+                this.ename= _name;
+                this.id= _id;
+                this.salary=_salary;
+            }
+            getDetail(){
+                console.log('Hello');
+            }
+        }
+
+        class fullTimeEmp extends Emp{
+            constructor(_name, _id, _salary){
+            super(_name, _id, _salary);
+            }
+
+            msg(){
+                super.getDetail();
+                console.log(this.ename, this.id, this.salary)
+            }
+        }
+
+        let obj1 = new Emp('Sakir', 221, 1200000);
+        let baseClass = new fullTimeEmp('Raman', 222, 110000);
+        baseClass.msg();     
+    </script>
+</body>
+</html>

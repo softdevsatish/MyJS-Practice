@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let percentages = ['50', '60', '70', '80', '90'];
+        let check = percentages.some(checkPer)
+        document.write(check +'<br><br>');
+        document.write('<hr>');
+        function checkPer(num){
+            return  num>=100;
+        }
+
+        let ages = ['19', '20', '30', '40'];
+        let num = ages.every(checkAge);
+        document.write(num);
+        function checkAge(arry){
+            return arry>=20;
+        }
+
+
+    </script>
+</body>
+</html>

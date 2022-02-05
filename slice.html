@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Array Slice & Splice</title>
+  </head>
+  <body>
+    <script>
+      let superHeroes = [
+        "Nagraaj",
+        "Parmanu",
+        "Doga",
+        "Bhokal",
+        "Tiranga",
+        "Inspector Steel",
+        "Bheriya",
+        "Super Commando Dhruva",
+      ];
+      document.write(superHeroes + "<br><br>");
+      let newList = superHeroes.slice(2, 5); //Print value on index 2 to index 4.
+      document.write(newList + "<br><br>");
+
+      let newList2 = superHeroes.slice(2); //Print All value on index 2 to end index.
+      document.write(newList2 + "<br><br>");
+
+      let newList3 = superHeroes.slice(-3); //Print All value on index -3 to end index.
+      document.write(newList3 + "<br><br>"); //[index starting from end is: -1, -2, -3....]
+
+      let newList4 = superHeroes.slice(-3, -1); //Print All value on index -3 to -2 index.
+      document.write(newList4 + "<br><br>");
+    </script>
+  </body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator- Switch Case</title>
+</head>
+<body>
+    <script>
+        var num1 = eval(prompt("Enter First Number"));
+        var num2 = parseFloat(prompt("Enter Second Number"));
+        var operator = prompt("Enter +, - , * , / OR %");
+        
+        // Switch Statement Start
+        /* switch(opertor)
+        {
+            case '+':
+            // var ans = num1+num2;
+            document.write(`Addition of Numbers are:${num1+num2}`);
+            break;
+
+            case '-':
+            // var ans = num1-num2;
+            document.write(`Subtraction of Numbers are:${num1-num2}`);
+            break;
+
+            case '*':
+            // ans = num1*num2;
+            document.write(`Multiplication of Numbers are:${num1*num2}`);
+            break;
+
+            case '/':
+            // ans = num1/num2;
+            document.write(`Divide of numbers are:${num1/num2}`);
+            break;
+
+            case '%':
+            // ans = num1%num2;
+            document.write(`Remainder of Numbers are:${num1%num2}`);
+            break;
+
+            default:
+            alert("Invalid Calculating Operator")
+        } */  // Switch Statement Close
+
+        if (operator == '+')
+        {
+            document.write(`Addition of Numbers are:${num1+num2}`);
+        }
+
+        else if(operator == '-')
+        {
+            document.write(`Subtraction of Numbers are:${num1-num2}`);
+        }
+
+        else if(operator=='*')
+        {
+            document.write(`Multiplication of Numbers are:${num1*num2}`);
+        }
+
+        else if(operator == '/')
+        {
+            document.write(`Divide of Numbers are:${num1/num2}`);
+        }
+
+        else if(operator == '%')
+        {
+            document.write(`Remainder of Numbers are:${num1%num2}`);
+        }
+
+        else{
+            document.write('Invalid Calculating Operator');
+        }
+
+    </script>
+</body>
+</html>

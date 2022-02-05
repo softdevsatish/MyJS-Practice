@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Symbol - New Data Types</title>
+</head>
+<body>
+    <script>
+        // var x= Symbol("Hello");
+        // var y = Symbol("Hello");
+        // document.write(x);    //Error
+        // console.log(x===y);    // Output: False
+        // document.write(x.toString());
+        // document.write(x.description);
+
+        //-------------------
+
+        let age = Symbol("age");
+        let student = {
+            name: "Ram",
+            class: "MCA",
+            [age]: 20
+        }
+        console.log(student);
+
+        //--------------------------
+
+        let id = Symbol("id");
+        let emp = {
+            name: "Ram",
+            job: "UI & UX"
+        }
+
+        emp[id]= 101;
+        console.log(emp);
+        console.log(emp.name);
+        console.log(emp.id);  // Output is Undefined
+        console.log(emp[id]);
+    </script>
+</body>
+</html>

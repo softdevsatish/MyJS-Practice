@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Promise 2 Numbers calculating</title>
+  </head>
+  <body>
+    <script>
+      function prom(num1, num2) {
+        return new Promise(function (resolve, reject) {
+          console.log(`Loading....Please wait`);
+          let ans = num1 / num2;
+         setTimeout(()=>{
+          if ((num1, num2)) {
+            resolve(`Answer is: ${ans}`);
+          } else {
+            reject(`Unable to calculate`);
+          }
+         }, 3000)
+        });
+      }
+
+      let complete = (result) => {
+        console.log(result);
+      };
+
+      let inComplete = (error) => {
+        console.log(error);
+      };
+      prom(10, 0).then(complete).catch(inComplete);
+      //prom(prompt('Enter first number'), prompt('Enter second number')).then(complete).catch(inComplete);
+    </script>
+  </body>
+</html>

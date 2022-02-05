@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>isArray</title>
+  </head>
+  <body>
+    <script>
+      let superHeroes = ["Nagraaj", "Parmanu", "Doga", "Bhokal"];
+      document.write(superHeroes + "<br><br>");
+      let check = Array.isArray(superHeroes);
+      document.write(check + "<br><br>");
+      let num = 20;
+      let find = Array.isArray(num);
+      document.write(find + "<br><br>");
+
+      if (Array.isArray(superHeroes)) {
+        document.write("This is an array");
+      } else {
+        document.write("This is not an array");
+      }
+    </script>
+  </body>
+</html>
